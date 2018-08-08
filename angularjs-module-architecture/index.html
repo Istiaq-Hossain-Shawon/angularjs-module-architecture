@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="description" content="A simple angular one project template">
+  <meta name="author" content="Istiaq Hossain Shawon">
+  <link rel="icon" href="images/favicon.ico">
+
+  <title>MyApp</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/loading-bar.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid" ng-controller="NavCtrl">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/dashboard">MyApp</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li ng-class="{active: isActive('/dashboard')}"><a href="#/dashboard">Dashboard</a></li>
+            <li ng-class="{active: isActive('/profile')}"><a href="#/profile">Profile</a></li>
+            <li><a href="#" ng-click="logOut()">Logout</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div ng-view=""></div>
+
+  </div>
+
+
+  <!-- vendor dependency -->
+  <script src="js/vendor/jquery-3.1.1.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/lodash.min.js"></script>
+
+  <!-- angular dependency -->
+  <script type="text/javascript" src="js/angularjs/angular.js"></script>
+  <script type="text/javascript" src="js/angularjs/angular-animate.min.js"></script>
+  <script type="text/javascript" src="js/angularjs/angular-aria.min.js"></script>
+  <script type="text/javascript" src="js/angularjs/angular-cookies.min.js"></script>
+  <script type="text/javascript" src="js/angularjs/angular-messages.min.js"></script>
+  <script type="text/javascript" src="js/angularjs/angular-resource.min.js"></script>
+  <script type="text/javascript" src="js/angularjs/angular-route.min.js"></script>
+  <script type="text/javascript" src="js/angularjs/angular-sanitize.min.js"></script>
+  <script type="text/javascript" src="js/angularjs/angular-touch.min.js"></script>
+  <script type="text/javascript" src="js/angularjs/loading-bar.min.js"></script>
+  <script type="text/javascript" src="js/angularjs/angular-local-storage.min.js"></script>
+  <script type="text/javascript" src="js/angularjs/angular-loading-overlay.js"></script>
+  <script type="text/javascript" src="js/angularjs/angular-jwt.min.js"></script>
+
+  <script src="app.js"></script>
+
+  <!--Configs-->
+  <script src="common/configs/ApiEndPoints.js"></script>
+
+  <!--Directives-->
+  <script src="common/directives/bootstrap-modal-directive.js"></script>
+  <script src="common/directives/a-disabled-directive.js"></script>
+  <script src="common/directives/form-action-footer-directive.js"></script>
+  <script src="common/directives/server-side-message-directive.js"></script>
+
+  <!--Filters-->
+  <script src="common/filters/trustUrl.js"></script>
+  <script src="common/filters/trustHtml.js"></script>
+  <script src="common/filters/htmlToPlainText.js"></script>
+
+  <!--Services-->
+  <script src="common/services/HttpRequestService.js"></script>
+  <script src="common/services/AuthService.js"></script>
+  <script src="common/services/AuthInterceptorService.js"></script>
+  <script src="common/services/ActionMessageService.js"></script>
+  <script src="common/services/CheckBoxService.js"></script>
+  <script src="common/services/ComboBoxService.js"></script>
+  <script src="common/services/MathService.js"></script>
+  <script src="common/services/PaginationService.js"></script>
+
+  <!--Dashboard-->
+  <script src="module/dashboard/DashboardController.js"></script>
+
+  <!--Profile-->
+  <script src="module/profile/ProfileController.js"></script>
+
+  <!--Login-->
+  <script src="module/login/LoginController.js"></script>
+
+</body>
+</html>

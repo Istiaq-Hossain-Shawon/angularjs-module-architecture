@@ -1,0 +1,6 @@
+D:\Admin_Profile\Desktop\angularjs-module-architecture\angularjs-module-architecture\bin\angularjs-module-architecture.dll.config
+D:\Admin_Profile\Desktop\angularjs-module-architecture\angularjs-module-architecture\bin\angularjs-module-architecture.dll
+D:\Admin_Profile\Desktop\angularjs-module-architecture\angularjs-module-architecture\bin\angularjs-module-architecture.pdb
+D:\Admin_Profile\Desktop\angularjs-module-architecture\angularjs-module-architecture\obj\Debug\angularjs-module-architecture.csprojResolveAssemblyReference.cache
+D:\Admin_Profile\Desktop\angularjs-module-architecture\angularjs-module-architecture\obj\Debug\angularjs-module-architecture.dll
+D:\Admin_Profile\Desktop\angularjs-module-architecture\angularjs-module-architecture\obj\Debug\angularjs-module-architecture.pdb

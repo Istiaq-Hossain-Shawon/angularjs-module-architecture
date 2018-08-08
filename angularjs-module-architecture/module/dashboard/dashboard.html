@@ -1,0 +1,19 @@
+<div bs-loading-overlay bs-loading-overlay-active-class="overlay overlay-loader">
+  overlay loader div
+</div>
+
+<div class="jumbotron">
+  <h1>{{pageName}}</h1>
+  <p>Sample dashboard page</p>
+  <button type="button" class="btn btn-primary" ng-click="showModal()">Show Modal {{isModalShow}}</button>
+</div>
+
+<bootstrap-modal title="Test Modal" visible="isModalShow">
+  <div class="modal-body">
+    Hello modal
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" ng-click="showLoader()">Show Loader</button>
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+  </div>
+</bootstrap-modal>
